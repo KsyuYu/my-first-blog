@@ -1,0 +1,105 @@
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <div class="row">
+                                      <form action="#" method="post">
+                                            <fieldset class="col-md-4">
+                                                <input id="name" placeholder="Иван Иванов" autofocus required type="text" name="name" placeholder="Name">
+                                            </fieldset>
+                                            <fieldset class="col-md-4">
+                                                <input type="email" name="email" id="email" placeholder="Email">
+                                            </fieldset>
+                                            <fieldset class="col-md-4">
+                                                <div class="rating-area">
+  <input type="radio" id="star-5" name="rating" value="5">
+  <label for="star-5" title="Оценка «5»"></label> 
+  <input type="radio" id="star-4" name="rating" value="4">
+  <label for="star-4" title="Оценка «4»"></label>    
+  <input type="radio" id="star-3" name="rating" value="3">
+  <label for="star-3" title="Оценка «3»"></label>  
+  <input type="radio" id="star-2" name="rating" value="2">
+  <label for="star-2" title="Оценка «2»"></label>    
+  <input type="radio" id="star-1" name="rating" value="1">
+  <label for="star-1" title="Оценка «1»"></label>
+</div>
+<style type="text/css">
+.rating-area {
+  overflow: hidden;
+  width: 265px;
+  margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 32px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 30px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: '★';
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}
+</style>
+
+                                            </fieldset>
+                                          
+<div id="block1" style="display: none;"><fieldset class="col-md-12">
+                                                <textarea name="message" id="message" placeholder="Нас непокоїть така низька оцінка. Будь ласка, опишіть що Вам не сподобалось"></textarea>
+                                            </fieldset></div>
+<div id="block2" style="display: none;"><fieldset class="col-md-12">
+                                                <textarea name="message" id="message" placeholder="Ми щасливі, що Вам сподобалось. Можливо, хочете розказати про свою подорож детальніше?"></textarea>
+                                            </fieldset></div>
+
+<script>
+document.querySelector("#star-1").onclick = function(){           /*star-1 - кнопка или тип radio*/
+    document.querySelector("#block2").style.display = "none";       /*у меня есть 2 текста: block2 - форма для введения текста для звезды 4. В этой строке мы его скрываем (это то, с чем я мучалась)*/
+        document.querySelector("#block1").style.display = "block"; /*block1 - блок для звезды 1. Тут мы его и выводим*/
+
+}
+document.querySelector("#star-4").onclick = function(){
+        document.querySelector("#block1").style.display = "none";
+        document.querySelector("#block2").style.display = "block";
+
+}
+</script>
+
+                                            
+                                            <fieldset class="col-md-12">
+                                                <input type="submit" name="send" value="Send Message" id="submit" class="button">
+                                            </fieldset>
+
+                                        </form>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+
+                </div> 
+            </div> 
+
+        </div> 
+    </div> 
