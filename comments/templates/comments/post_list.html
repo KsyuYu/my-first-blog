@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,13 +8,13 @@
     <meta name="viewport" content="width=device-width">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.png" type="images/png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/templatemo_misc.css">
-    <link rel="stylesheet" href="css/templatemo_style.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo_misc.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo_style.css' %}">
+    <script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
 
 </head>
 <body>
@@ -24,7 +25,7 @@
                 <div class="sidebar-menu">                    
                     <div class="logo-wrapper">
                         <h1 class="logo">
-                            <a href="#"><img src="images/logo.png" alt="Львів">
+                            <a href="#"><img src="{% static 'images/logo.png' %}" alt="Львів">
                             <span>Все про місто Лева</span></a>
                         </h1>
                     </div>  
@@ -49,7 +50,7 @@
                                     <a href="#tab1" class="icon-item">
                                         <div class="member-item">
                                     <div class="thumb">
-                                        <img src="images/team/member-1.jpg" alt="Як дістатися до міста Лева?">
+                                        <img src="{% static 'images/team/member-1.jpg' %}" alt="Як дістатися до міста Лева?">
                                     </div>
                                     <h4>Як дістатися до міста Лева?</h4>
                                     <span>Потягом <br>Літаком <br>Автобусом <br>Автомобілем</span>
@@ -60,7 +61,7 @@
                                     <a href="#tab2" class="icon-item">
                                         <div class="member-item">
                                     <div class="thumb">
-                                        <img src="images/team/member-2.jpg" alt="System of a Down">
+                                        <img src="{% static 'images/team/member-2.jpg' %}" alt="System of a Down">
                                     </div>
                                     <h4>Проживання</h4>
                                     <span>Апартаменти <br>Хостели <br>Готелі <br>Гостьові будинки</span>
@@ -71,7 +72,7 @@
                                     <a href="#tab3" class="icon-item">
                                         <div class="member-item">
                                     <div class="thumb">
-                                        <img src="images/team/member-3.jpg" alt="Avril Lavigne">
+                                        <img src="{% static 'images/team/member-3.jpg' %}" alt="Avril Lavigne">
                                     </div>
                                     <h4>Сувеніри</h4>
                                     <span>Я <br>ще <br>не <br>знаю</span>
@@ -127,7 +128,7 @@
                                     <a href="#tab4" class="icon-item">
                                         <div class="member-item">
                                     <div class="thumb">
-                                        <img src="images/team/member-1.jpg" alt="Marilyn Manson">
+                                        <img src="{% static 'images/team/member-1.jpg' %}" alt="Marilyn Manson">
                                     </div>
                                     <h4>Marilyn Manson</h4>
                                     <span>Industrial rock <br>Industrial metal <br>Hard rock <br>Alternative metal</span>
@@ -138,7 +139,7 @@
                                     <a href="#tab5" class="icon-item">
                                         <div class="member-item">
                                     <div class="thumb">
-                                        <img src="images/team/member-2.jpg" alt="System of a Down">
+                                        <img src="{% static 'images/team/member-2.jpg' %}" alt="System of a Down">
                                     </div>
                                     <h4>System of a Down</h4>
                                     <span>Alternative metal <br>Nu metal <br>Hard rock <br>Progressive metal</span>
@@ -149,7 +150,7 @@
                                     <a href="#tab6" class="icon-item">
                                        <div class="member-item">
                                     <div class="thumb">
-                                        <img src="images/team/member-3.jpg" alt="Avril Lavigne">
+                                        <img src="{% static 'images/team/member-3.jpg' %}" alt="Avril Lavigne">
                                     </div>
                                     <h4>Avril Lavigne</h4>
                                     <span>Pop punk <br>Pop rock <br>Alternative rock <br>Post-grunge</span>
@@ -180,7 +181,7 @@
                             
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g1.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g1.jpg' %}" alt="">
                                     <a data-rel="lightbox" class="overlay" href="images/gallery/g1.jpg">
                                         <span>Площа Ринок</span>
                                     </a>
@@ -188,7 +189,7 @@
                             </div> 
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g2.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g2.jpg' %}" alt="">
                                     <a data-rel="lightbox" class="overlay" href="images/gallery/g2.jpg">
                                         <span>Палац Потоцьких</span>
                                     </a>
@@ -196,7 +197,7 @@
                             </div> 
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g3.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g3.jpg' %}" alt="">
                                     <a data-rel="lightbox" class="overlay" href="images/gallery/g3.jpg">
                                         <span>Львівська ратуша</span>
                                     </a>
@@ -204,7 +205,7 @@
                             </div> 
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g4.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g4.jpg' %}" alt="">
                                     <a data-rel="lig'htbox" class="overlay" href="images/gallery/g4.jpg">
                                         <span>Високий замок</span>
                                     </a>
@@ -212,7 +213,7 @@
                             </div> 
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g5.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g5.jpg' %}" alt="">
                                     <a data-rel="lightbox" class="overlay" href="images/gallery/g5.jpg">
                                         <span>Арсенал</span>
                                     </a>
@@ -220,7 +221,7 @@
                             </div> 
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g6.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g6.jpg' %}" alt="">
                                     <a data-rel="lightbox" class="overlay" href="images/gallery/g6.jpg">
                                         <span>Личаківське кладовище</span>
                                     </a>
@@ -228,7 +229,7 @@
                             </div> 
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g7.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g7.jpg' %}" alt="">
                                     <a data-rel="lightbox" class="overlay" href="images/gallery/g7.jpg">
                                         <span>Оперний театр</span>
                                     </a>
@@ -236,7 +237,7 @@
                             </div> 
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g8.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g8.jpg' %}" alt="">
                                     <a data-rel="lightbox" class="overlay" href="images/gallery/g8.jpg">
                                         <span>Вірменська вулиця</span>
                                     </a>
@@ -244,7 +245,7 @@
                             </div> 
                             <div class="col-md-4 col-ms-6">
                                 <div class="g-item">
-                                    <img src="images/gallery/g9.jpg" alt="">
+                                    <img src="{% static 'images/gallery/g9.jpg' %}" alt="">
                                     <a data-rel="lightbox" class="overlay" href="images/gallery/g9.jpg">
                                         <span>Каплиця Боїмів</span>
                                     </a>
@@ -283,7 +284,7 @@
 
                                                 <input type="email" name="email" id="email" placeholder="Електронна пошта">
                                             </fieldset>
-                                            <script src="js/validation.js"></script>
+                                            <script src="{% static 'js/validation.js' %}"></script>
 
                                             <fieldset class="col-md-4">
                                                 <div class="rating-area">
@@ -351,7 +352,7 @@
                                             </fieldset></div>
 
 
-<script src="js/star.js"></script>
+<script src="{% static 'js/star.js' %}"></script>
 
                                             
                                             <fieldset class="col-md-12">
@@ -384,12 +385,12 @@
             </div>
         </div>
     </div> 
-<script src="js/vendor/jquery-1.10.1.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-    <script src="js/jquery.easing-1.3.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+<script src="{% static 'js/vendor/jquery-1.10.1.min.js' %}"></script>
+    <script src="static/js/jquery-1.10.1.min.js"></script>
+    <script src="{% static 'js/jquery.easing-1.3.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
     <script type="text/javascript">
             
 			jQuery(function ($) {
