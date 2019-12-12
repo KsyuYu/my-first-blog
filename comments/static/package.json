@@ -1,0 +1,10 @@
+{
+  "name": "ku--lviv-static",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.0"
+  }
+}

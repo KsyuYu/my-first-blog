@@ -278,7 +278,7 @@
                                     <div class="row">
                                     	<form action="#" method="post" id="form_id" onsubmit="javascript:return validate('form_id','email');">
                                             <fieldset class="col-md-4">
-                                                <input id="name" type="text" name="name" placeholder="Name" autofocus required>
+                                                <input id="name" type="text" name="name" placeholder="Ім'я" autofocus required>
                                             </fieldset>
                                             <fieldset class="col-md-4">
 
@@ -289,15 +289,15 @@
                                             <fieldset class="col-md-4">
                                                 <div class="rating-area">
                                                 	<input type="radio" id="star-5" name="rating" value="5">
-                                                	<label for="star-5" title="Оценка «5»"></label>	
+                                                	<label for="star-5" title="Оцінка «5»"></label>	
                                                 	<input type="radio" id="star-4" name="rating" value="4">
-                                                	<label for="star-4" title="Оценка «4»"></label>    
+                                                	<label for="star-4" title="Оцінка «4»"></label>    
                                                 	<input type="radio" id="star-3" name="rating" value="3">
-                                                	<label for="star-3" title="Оценка «3»"></label>  
+                                                	<label for="star-3" title="Оцінка «3»"></label>  
                                                 	<input type="radio" id="star-2" name="rating" value="2">
-                                                	<label for="star-2" title="Оценка «2»"></label>    
+                                                	<label for="star-2" title="Оцінка «2»"></label>    
                                                 	<input type="radio" id="star-1" name="rating" value="1">
-                                                	<label for="star-1" title="Оценка «1»"></label>
+                                                	<label for="star-1" title="Оцінка «1»"></label>
                                                 </div>
 <style type="text/css">
 .rating-area {
@@ -356,9 +356,11 @@
 
                                             
                                             <fieldset class="col-md-12">
-                                                <input type="submit" name="send" value="Send Message" id="submit" class="button">
+                                                <input type="button" name="send" value="Send Message" id="submit" class="button">
                                             </fieldset>
 
+                                            <div id="commentsWrapper"></div>
+                                            <input type="button" id="loadmore" value="Ще коментарі" class="button">
                                         </form> 
 
 
@@ -420,7 +422,17 @@
             });
             
     </script>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
 
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+
+<script src="{% static 'comments.js'%}"></script>
     
 </body>
 </html>
