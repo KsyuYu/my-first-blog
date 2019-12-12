@@ -1,4 +1,7 @@
 #commentsWrapper
 {
-    background: white;
+    background: #E6E6FA;
+    text-align: center;
+    color: #000000;
+    border-radius: 10px;
 }
